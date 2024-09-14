@@ -85,7 +85,3 @@ if(plantSpace > area ){
 } else{
     console.log("Space is fine for now...")
 }
-
-
-
-
