@@ -2,7 +2,7 @@ const PI = 3.1415;
 const radius = 5;
 const area = PI * radius * radius;
 const minSpacePerPlant = 0.8;
-const startingPlants = 20;
+let startingPlants = 20;
 
 let currentWeek = 0;
 let plants = startingPlants * 2 ** currentWeek
@@ -86,6 +86,21 @@ if(plantSpace > area ){
     console.log("Space is fine for now...")
 }
 
+//=============================================================================================
+//Part 3
+console.log('\n \n========== PART 3 =========')
+startingPlants = 100;
+plantSpace = startingPlants * minSpacePerPlant;
 
+try{
+    if( plantSpace > area){
+        throw ("Space required for plants: " + plantSpace + "\n Space total: " + area)
+    } else{
+        console.log("You have enough space to keep growing")
+    }
+}
+catch(error){
+    console.log(error)
+}
 
 
